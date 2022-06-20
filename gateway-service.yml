@@ -21,6 +21,7 @@ spring:
           uri: lb://product-service
           predicates:
             - Path=/msproducts/**
+            - Map=/products
         - id: shopping-service
           uri: lb://shopping-service
           predicates:
